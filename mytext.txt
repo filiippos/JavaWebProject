@@ -1,0 +1,10 @@
+@relation students
+
+@attribute age numeric
+@attribute test numeric
+
+@data
+7,9
+14,4
+5,10
+6,7

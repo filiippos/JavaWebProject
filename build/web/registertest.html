@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Firstname</label>
+                              
+                                <input type="text" class="form-control" id="firstname" placeholder="Enter your firstname" >Please enter your firstname. </input> <br></br>
+                             
+                                     <label>Lastname</label>
+                                     <input type="text" class="form-control" id="lastname" placeholder="Enter your lastname">Please enter your lastname. </input> <br></br>
+                                   
+                                     <label>Email</label>
+                                     <input type="text" class="form-control" id="email" placeholder="name@example.com" >Please enter your email.</input> <br></br>
+                                    
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" >Please enter your password.  </input>
+                                    <p class="help-block text-danger"></p>
+                               
+                                    
+                                    <input type="button" value="Register" class="btn btn-default" id="register"    </input>
+                                    
+                                 
+           <!-- jQuery script to filter the form -->
+    <script type="text/javascript" >
+//    $(document).ready(function(){
+ //  $("#register").click(function(){
+ //  if($("#firstname").val() === ""){
+  //    alert('Input can not be left blank');
+  // }
+//});
+//});
+
+$("#register").click(function(){
+    var value=$.trim($("#firstname").val());
+    var value2=$.trim($("#lastname").val());
+    var value3=$.trim($("#email").val());
+    var value4=$.trim($("#pwd").val());
+    
+   if(value.length ===0){
+    alert("Empty Fields!! Firstname empty");
+}
+else if(value2.length ===0){
+    alert("Empty Fields!! Lastname empty");
+}
+else if(value3.length ===0){
+    alert("Empty Fields!! Email empty");
+}
+else if(value4.length ===0){
+    alert("Empty Fields!! Lastname empty");
+}
+});
+    </script>
+    
+                            </div>
+                        </div>
+                    
+    </body>
+</html>

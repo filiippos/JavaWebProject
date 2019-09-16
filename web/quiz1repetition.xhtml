@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:p="http://primefaces.org/ui"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <meta charset="utf-8">
+            </meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        </meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        </meta>
+    <meta name="description" content="">
+        </meta>
+    <meta name="author" content="">
+    </meta>
+        <meta content="text/html;charset=UTF-8" />
+        <link rel="shortcut icon" href="logo.png" />
+        <title>Maths' E- Class - Test Αριθμητικών Παραστάσεων Επανάληψη</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+         <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+          <link href="bootstrap.css" rel="stylesheet"></link>
+          <link href="font-awesome.css" rel="stylesheet"></link>
+          <link href="font-awesome.css" rel="stylesheet"></link>
+ <link href="freelancer.css" rel="stylesheet"></link>
+    <!-- Custom CSS -->
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome.min.css" rel="stylesheet" type="text/css"></link>
+      <link href="font-awesome.css" rel="stylesheet" type="text/css"></link>
+       <link href="quizcss.css" rel="stylesheet" type="text/css"></link>
+      
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"></link>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"></link>
+    <!-- Latest compiled and minified JavaScript -->
+    
+    </h:head>
+   <h:body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Welcome to the Math's Class</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href=""> #{login.firstname} </a>
+                    </li>
+                     <li class="page-scroll">
+                        <a href="home.jsf">Home Page</a>
+                    </li>
+                    <li class="page-scroll">
+                       <a href="#{login.logout()}">Logout</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+        
+        
+    </nav>
+   
+    
+    <br></br>
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Test Αριθμητικων Παραστασεων</h2>
+                    <hr class="star-primary"></hr>
+                </div>
+            </div>
+            
+            <br></br><br></br>
+              <div class="quizContainer">
+                  <h1>Test Αριθμητικων Παραστασεων</h1><br></br>
+                
+        <div class="question"></div>
+        <ul class="choiceList"></ul>
+        <div class="quizMessage"></div>
+        <div class="result"></div>
+        <div class="nextButton">Next Question</div><br></br>
+        <div class="errorwarning"></div>
+        <h:form id='quiz1form'>
+             <h:inputHidden id="txtProperty" > </h:inputHidden> <!-- no binding here, hidden pedio  -->
+             <h4><strong>Correct Answers</strong></h4>
+            <input type="text" id="correctAnswersfield" name="correctAnswersfield" readonly="readonly"  > </input><!-- pedio input text mono readonly gia na min mporei na peiraxtei apo ton xristi kai na katagrafei ta correctAnswers prokeimenou na kserei o mathitis p ekane lathos kai  na stelnetai apo ti forma stin java klassi stin ousia i metavliti correctAnswers-->
+     <!--    <h:inputHidden id="correctAnswersfield" value="#{coursequizs.correctAnswers}" /> -->
+           
+
+            
+            <div>  <p:commandButton class='endButton' value='End Quiz' action ="#{coursequizs.quiz1()}" /> </div>
+        
+    
+       
+        </h:form>
+        
+  
+<!--<button id="btn1">Hint</button> -->
+        <br></br>
+    </div>
+
+
+    
+
+
+
+            
+        </div><br></br><br></br><br></br>
+        <div align ="center">
+           <a  class="popup"  href="#!" data-link="https://www.youtube.com/embed/TDixIAQY9GA?enablejsapi=1" data-title="Αριθμητικές Παραστάσεις" >Help 1 | </a>
+
+<a class="popup" href="#!" data-link="https://www.youtube.com/embed/4dkLFz6XD90?enablejsapi=1" data-title="Παραδείγματα Αριθμητικών Παραστάσεων">Help 2</a>
+        </div>
+
+<div align="center" id="video-view">
+</div>
+    </section>
+     
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+     /**
+ * Created with JetBrains WebStorm.
+ * User: pwanwu
+ * Date: 18/09/2013
+ * Time: 17:41
+ * To change this template use File | Settings | File Templates.
+ * 
+ * 
+ 
+ */
+//<![CDATA[
+
+
+
+
+var questions = [{ //pinakas me erwtisi,epiloges kai swsti apantisi 5 thesewn
+    question: "Πόσο κάνει 25 + 5 + 10 x 2 4 x 2,5 + 40 : 10",
+    choices: ["534", "634", "124", "304"],
+    correctAnswer: 1
+}, {
+    question: "Αγόρασα 2 χυμούς προς 0,75€ τον ένα και 3 τυρόπιτες προς 1,5€ τη μία. Πόσο πλήρωσα;",
+    choices: ["10€", "5€", "6€", "14.5€"],
+    correctAnswer: 2
+}, {
+    question: "Τι ονομάζεται αριθμητική παράσταση?",
+    choices: ["Μια παράσταση που περιέχει πολλαπλασιασμούς και προσθέσεις", "Μια παράσταση που περιέχει πράξεις με αριθμούς", "Μια παράσταση που περιέχει πολλαπλασιασμούς και διαιρέσεις", "Μια παράσταση που περιέχει μόνο προσθέσεις και αφαιρέσεις "],
+    correctAnswer: 1
+}, {
+    question: "Για να υπολογίσουμε την τιμή της αριθμ. παράστασης, εκτελούμε τις πράξεις με την εξής σειρά:  ",
+    choices: ["Πρώτα εκτελούμε τους πολλαπλασιασμούς και τις διαιρέσεις με τη σειρά που σημειώνονται (από αριστερά προς τα δεξιά). - Μετά εκτελούμε τις προσθέσεις και τις αφαιρέσεις. ", "Πρώτα εκτελούμε τις προσθέσεις και τις αφαιρέσεις,μετά εκτελούμε τους πολλαπλασιασμούς και τις διαιρέσεις με τη σειρά που σημειώνονται (από αριστερά προς τα δεξιά).", "Πρώτα παρενθέσεις,μετά προσθέσεις αφαιρέσεις,μετά τα άλλα", "Πρώτα προσθέσεις αφαιρέσεις και μετά τα υπόλοιπα"],
+    correctAnswer: 0
+}, {
+    question: "(8,5 + 1,5) : (6,75 – 1,75)= ?",
+    choices: ["2", "3", "12.5", "5.5"],
+    correctAnswer: 0
+    }, {
+    question: "4+5x10-4  = ?",
+    choices: ["50", "86", "34", "58"],
+    correctAnswer: 0
+     }, {
+    question: "15-10+15x0/2  = ?",
+    choices: ["0", "100", "25", "5"],
+    correctAnswer: 3
+     }, {
+    question: "85-7/2 + (-1.5)  = ?",
+    choices: ["80", "70", "82", "90"],
+    correctAnswer: 0
+     }, {
+    question: "92.5 * 2 + 15 -10/2  = ?",
+    choices: ["175", "192", "102", "82"],
+    correctAnswer: 0
+}];
+
+var currentQuestion = 0;
+var correctAnswers = 0;
+var quizOver = false;
+var questionnumber = 0;
+
+
+var limit = 8,
+    amount = 9,
+    lower_bound = 0,
+    upper_bound = 8,
+    unique_random_numbers = [];
+
+if (amount > limit) limit = amount; //Infinite loop if you want more unique
+                                    //Natural numbers than existemt in a
+                                    // given range
+while (unique_random_numbers.length < limit) {
+    var random_number = Math.round(Math.random()*(upper_bound - lower_bound) + lower_bound);
+    if (unique_random_numbers.indexOf(random_number) == -1) { 
+        // Yay! new random number
+        unique_random_numbers.push( random_number );
+    }
+}
+
+
+
+
+$(document).ready(function () {
+
+$(".popup").click(function () {
+    var $this = $(this);
+    var $iframe = $("<iframe>").attr("src", $this.data("link")).css({"width": 400, "height": 300});
+    var $title = $("<h1>").text($this.data("title"));
+    $("#video-view").html($title).append($iframe);
+    $iframe.wrap("<div class='class-video'>");
+});
+    // Display the first question
+    displayCurrentQuestion();//kaleitai i sunartisi opou emfanizei tis erwtiseis sumfwna me ton metriti currentQuestion p ksekinaei me 0
+    $(this).find(".endButton").hide();//kruvoume to endButton gia na to emfanisoume sto telos
+    $(this).find(".quizMessage").hide(1000);//kruvei to quizMessage me kathusterisi 1 sec
+
+    // On clicking next, display the next question
+    //me to pou patisoume click sto next question koumpi me klassi nextButton ginetai elegxos an to quizOver boolean metavliti einai false, an einai psevdes dld to quiz dn exei oloklirwthei elegxoume an o xristis
+    //epelekse kapoia pithani apantisi , dinwntas sto value value = $("input[type='radio']:checked").val();
+//an to value einai undefined emfanizetai minima sto xristi na epileksei apantisi , alliws krivei to proigoumeno minima kai elegxei an einai swsti i lathos i apantisi, an einai swsti t dinei ponto
+//epeita megalwnei o metritis correntAnswers kai elegxetai an to currentQuestion exei kseperasei to questions.length,ean oxi kaleitai i sunartisi displayCurrentQuestion,alliws emfanizetai to score mesw tis displayScore
+    $(this).find(".nextButton").on("click", function () {
+        
+         $(this).find("#correctAnswersfield").val(correctAnswers);//katagrafi sto readonly input text twn swstwn erwtisewn prokeimenou na tis steilei pisw stin java klassi
+        if (!quizOver) {
+
+            value = $("input[type='radio']:checked").val();
+
+            if (value == undefined) {
+                $(document).find(".quizMessage").text("Please select an answer");
+                $(document).find(".quizMessage").show(1000);
+            } else {
+                questionnumber = questions[unique_random_numbers[currentQuestion]].correctAnswer +1;
+                // TODO: Remove any message -> not sure if this is efficient to call this each time....
+                $(document).find(".quizMessage").hide(1000);
+
+                if (value == questions[unique_random_numbers[currentQuestion]].correctAnswer) {
+                    correctAnswers++;
+                }
+                else {
+                  $(document).find(".quizContainer > .errorwarning").text("Wrong answer :/, Correct answer was  "+questionnumber+"").show();
+                  $(document).find(".quizContainer > .errorwarning").delay(2500).hide(1000);
+                 //   $(document).find(".quizContainer > .errorwarning").text("Wrong answer :/"" ").hide(1000);
+                }
+
+                currentQuestion++; // Since we have already displayed the first question on DOM ready
+                if (currentQuestion < questions.length) {
+                    $(this).find("#correctAnswersfield").val(correctAnswers);
+                    displayCurrentQuestion();
+                } else {
+                    displayScore();
+                    //                    $(document).find(".nextButton").toggle();
+                    //                    $(document).find(".playAgainButton").toggle();
+                    // Change the text in the next button to ask if user wants to play again
+                    $(this).find("#correctAnswersfield").val(correctAnswers);//show correctAnswers
+                    $(document).find(".nextButton").text("Play Again?");
+                    quizOver = true;
+                }
+            }
+        } else { // quiz is over and clicked the next button (which now displays 'Play Again?'
+            quizOver = false;
+            $(document).find(".nextButton").text("Next Question");
+            resetQuiz();
+            displayCurrentQuestion();
+            hideScore(1000);
+        }
+    });
+
+});
+
+// This displays the current question AND the choices
+function displayCurrentQuestion() {
+   
+    console.log("In display current Question");
+    $("#correctAnswersfield").val(correctAnswers); 
+    var question = questions[unique_random_numbers[currentQuestion]].question; //to question pairnei tin timi question apo ton pinaka questions gia ti thesi opou exei o metritis 
+    var questionClass = $(document).find(".quizContainer > .question");//apothikevoume sti metavliti questionClass apo tin klassi tou quiz quizContainer ---> question
+    var choiceList = $(document).find(".quizContainer > .choiceList");//to idio gia to choicelist
+    var numChoices = questions[unique_random_numbers[currentQuestion]].choices.length;//apothikevoume sti metavliti numChoices ton arithmo twn epilogwn legontas na parei apo ton pinaka questions sti thesi p einai o metritis ti stili choices kai megethos tis
+
+    // Set the questionClass text to the current question
+    $(questionClass).text(question);//sto questionclass vazoume keimeno to opoio einai to keimeno tis trexousas erwtisis question opws eipame k prin
+
+    // Remove all current <li> elements (if any)
+    $(choiceList).find("li").remove();//apo tis epiloges an exei meinei kapoio li to svinoume
+
+    var choice;//gia kathe pithani apantisi gename ena radio button to opoio periexei tin epilogi se keimeno 
+    for (i = 0; i < numChoices; i++) {
+        choice = questions[unique_random_numbers[currentQuestion]].choices[i];//dinoume se kathe epanalipsi sti metavliti choice apo ti thesi tou pinaka questions gia tin thesi currentQuestion tin antistoixi i epilogi choices[i[
+        $('<li><input type="radio" value=' + i + ' name="dynradio" />' + choice + '</li>').appendTo(choiceList);
+    }
+}
+
+function resetQuiz() {
+    currentQuestion = 0;
+    correctAnswers = 0;
+     $(this).find(".endButton").hide();
+    hideScore(1000);
+}
+function displayScore() {
+    if(correctAnswers==questions.length)
+    {
+        $(document).find(".quizContainer > .result").text("You got them all right dude :)  "+correctAnswers+"/"+questions.length+" , you don't have to take this course again");
+        $(document).find(".endButton").show(2000);
+    //   #{quiz.correctAnswers} = correctAnswers;
+      //  #{quiz.quiestionslength} = questions.length;           
+        var parsed_data = JSON.parse(correctAnswers);
+        var parsed_data2 = JSON.parse(questions.length);
+        console.log(parsed_data);
+        $("#correctAnswersfield").val(correctAnswers); 
+        console.log("arithmos" +correctAnswers);
+    }
+    else if(correctAnswers ==0)
+    {
+         $(document).find(".quizContainer > .result").text("Very Bad , 0/"+questions.length+" , you have to take the lesson again :(");
+         $(document).find(".endButton").show(2000);
+        var parsed_data = JSON.parse(correctAnswers);
+        var parsed_data2 = JSON.parse(questions.length);
+        console.log(parsed_data);
+   //     #{quiz.correctAnswers} = correctAnswers;
+     //   #{quiz.quiestionslength} = questions.length;   
+    }
+    else
+    {
+        if(correctAnswers <=3)
+        {
+             $(document).find(".quizContainer > .result").text("You scored: " + correctAnswers + " out of: " + questions.length + " that's too bad, you have to take this course again ! :(");
+    $(document).find(".quizContainer > .result").show();
+    $(document).find(".endButton").text("End Quiz").show(2000);
+        }
+        else {
+    $(document).find(".quizContainer > .result").text("You scored: " + correctAnswers + " out of: " + questions.length);
+    $(document).find(".quizContainer > .result").show();
+    $(document).find(".endButton").text("End Quiz").show(2000);
+        var parsed_data = JSON.parse(correctAnswers);
+        var parsed_data2 = JSON.parse(questions.length);
+        console.log(parsed_data); 
+        console.log(parsed_data2);
+       // #{quiz.quiestionslength}=parsed_data2;
+       // '#{quiz.correctAnswers}' = correctAnswers;
+      //  '#{quiz.quiestionslength}' = questions.length;   
+            console.log(#{quiz.quiestionslength});
+        }
+    }
+}
+
+function hideScore() {
+    $(document).find(".result").hide(1000);
+}
+
+//]]>
+
+//laceTd.click(function() {
+  //  var jsonObj= { jsonObj: [ {"rowID": $(nRow).attr('id')}  ]};                                    
+    //$.ajax({
+     //   data: JSON.stringify(jsonObj),
+     //   contentType: "application/json; charset=utf-8",
+   //     traditional: true,
+    //    url: "quizBean"
+  //  });
+//});
+</script>
+
+      
+   </h:body>
+</html>

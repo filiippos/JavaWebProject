@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 29, 2016 12:29:41 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="packagebean.Admins" table="admins">
+        <id name="id" type="int" access="field">
+            <column name="id" />
+            <generator class="identity"></generator>
+        </id>
+        
+        <property name="username" type="java.lang.String" access="field">
+            <column name="username" />
+        </property>
+        
+        <property name="password" type="java.lang.String" access="field">
+            <column name="password" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

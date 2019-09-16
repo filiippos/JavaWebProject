@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 29, 2016 12:29:41 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="packagebean.Students" table="students">
+        <id name="id" type="int" access="field">
+            <column name="id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="email" type="java.lang.String" access="field">
+            <column name="email" />
+        </property>
+        <property name="firstname" type="java.lang.String" access="field">
+            <column name="firstname" />
+        </property>
+        <property name="lastname" type="java.lang.String" access="field">
+            <column name="lastname" />
+        </property>
+        <property name="numberofanswers" type="int" access="field">
+            <column name="numberofanswers" />
+        </property>
+        <property name="numberofrightanswers" type="int" access="field">
+            <column name="numberofrightanswers" />
+        </property>
+        <property name="password" type="java.lang.String" access="field">
+            <column name="password" />
+        </property>
+        <property name="property" type="java.lang.String" access="field">
+            <column name="property" />
+        </property>
+         <property name="quiz1" type="java.lang.String" access="field">
+            <column name="quiz1" />
+        </property>
+         <property name="quiz2" type="java.lang.String" access="field">
+            <column name="quiz2" />
+        </property>
+         <property name="quiz3" type="java.lang.String" access="field">
+            <column name="quiz3" />
+        </property>
+        <property name="course1" type="java.lang.String" access="field">
+            <column name="course1" />
+        </property>
+        <property name="course2" type="java.lang.String" access="field">
+            <column name="course2" />
+        </property>
+        <property name="course3" type="java.lang.String" access="field">
+            <column name="course3" />
+        </property>
+        <property name="age" type="int" access="field">
+            <column name="age" />
+        </property>
+         <property name="preliminary_test" type="int" access="field">
+            <column name="preliminary_test" />
+        </property>
+        <property name="level" type="java.lang.String" access="field">
+            <column name="level" />
+        </property>
+    </class>
+</hibernate-mapping>
